@@ -1233,7 +1233,7 @@
 										Email for Enquiries: <!-- Updated Email Label for clarity -->
 										<b>
 											<a href="mailto:info@cctmobile-rubberising.co.za"><span class="__cf_email__" data-cfemail="1a73747c755a756f687b7e7e687f696934797577">info@cctmobile-rubberising.co.za</span></a><br/> <!-- Email is already a mailto link - no change needed -->
-											<a href="mailto:wynand@cctmobile-rubberising.co.za">wynand@cctmobile-rubberising.co.za/a> <!-- Website link already https - no change needed -->
+											<a href="mailto:wynand@cctmobile-rubberising.co.za">wynand@cctmobile-rubberising.co.za <!-- Website link already https - no change needed -->
 										</b>
 									</p>
 									<p class="big-font">
@@ -1246,25 +1246,31 @@
 							</div>
 							<div class="col-md-6">
 								<div class="text-left scroll-in-animation" data-animation="fadeInRight">
-									<form class="ajax-form" data-message-class="colors-e background-95 border heading" action="contact.php" method="post" novalidate="novalidate"> <!-- Updated action URL to relative path -->
+									<form class="ajax-form" 
+										data-message-class="colors-e background-95 border heading" 
+										action="https://formsubmit.co/wynand@cctmobile-rubberising.co.za" 
+										method="POST"
+										novalidate="novalidate">
+										<input type="hidden" name="_next" value="https://cctmobile-rubberising.co.za/thank-you.html">
+										<input type="hidden" name="_subject" value="New Rubber Coating Quote Request">
 										<div class="row">
 											<div class="col-md-6 control-group">
-												<div class="alt-placeholder">Your Name</div> <!-- Updated Placeholder Label -->
-												<input type="text" name="your-name" value="" size="40" placeholder="Your Name" data-validation-required-message="Please fill the required field." required> <!-- Updated Placeholder -->
+												<div class="alt-placeholder">Your Name</div>
+												<input type="text" name="name" value="" size="40" placeholder="Your Name" data-validation-required-message="Please enter your name." required>
 												<div class="help-block"></div>
 											</div>
 											<div class="col-md-6 control-group">
-												<div class="alt-placeholder">Your Email</div> <!-- Updated Placeholder Label -->
-												<input type="email" name="your-email" value="" size="40" placeholder="Your Email" data-validation-required-message="Please fill the required field." required> <!-- Updated Placeholder -->
+												<div class="alt-placeholder">Your Email</div>
+												<input type="email" name="email" value="" size="40" placeholder="Your Email" data-validation-required-message="Please enter your email address." required>
 												<div class="help-block"></div>
 											</div>
 											<div class="col-md-12 control-group">
-												<div class="alt-placeholder">Your Message - How can we help you?</div> <!-- Updated Placeholder Label and added context -->
-												<textarea name="your-message" placeholder="Your Message - How can we help you?" data-validation-required-message="Please fill the required field." required></textarea> <!-- Updated Placeholder -->
+												<div class="alt-placeholder">Your Message - How can we help you?</div>
+												<textarea name="message" placeholder="Your Message - How can we help you?" data-validation-required-message="Please enter your message." required></textarea>
 												<div class="help-block"></div>
 											</div>
 											<div class="col-md-12 form-actions">
-												<input class="button" type="submit" value="Get a Free Quote"> <!-- Updated Button Value - Call to action -->
+												<input class="button" type="submit" value="Get a Free Quote">
 											</div>
 										</div>
 									</form>
